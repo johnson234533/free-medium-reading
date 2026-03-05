@@ -121,8 +121,10 @@ img { max-width: 100%; height: auto; display: block; }
     text-transform: uppercase;
 }
 
-/* WP nav menu */
-#primary-menu {
+/* WP nav menu — supports both registered <ul id="primary-menu"> and
+   fallback wp_page_menu <div id="primary-menu"><ul> */
+#primary-menu,
+#primary-menu ul {
     display: flex;
     list-style: none;
     gap: 0.25rem;
@@ -139,7 +141,8 @@ img { max-width: 100%; height: auto; display: block; }
     transition: color 0.2s, background 0.2s;
 }
 #primary-menu a:hover,
-#primary-menu .current-menu-item > a { color: #4a85ad; background: #eaf3fb; }
+#primary-menu .current-menu-item > a,
+#primary-menu .current_page_item > a { color: #4a85ad; background: #eaf3fb; }
 #primary-menu .nav-cta > a {
     background: #4a85ad; color: #fff; border-radius: 4px;
 }
@@ -358,6 +361,7 @@ img { max-width: 100%; height: auto; display: block; }
     .trust-list       { flex-direction: column; gap: 0.35rem; align-items: flex-start; padding-left: 1rem; }
     .hero-content     { padding: 3rem 1.5rem; }
     .hero-section     { min-height: 440px; }
-    #primary-menu     { display: none; }
+    #primary-menu,
+    #primary-menu ul  { display: none; }
     .footer-bottom    { flex-direction: column; gap: 0.5rem; text-align: center; }
 }
