@@ -3,6 +3,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: http://free-medium-readingcom.local/sitemap_index.xml
+Sitemap: https://free-medium-reading.com/sitemap_index.xml
 # ---------------------------
 # END YOAST BLOCK
