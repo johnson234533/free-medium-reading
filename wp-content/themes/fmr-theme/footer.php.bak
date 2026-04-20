@@ -1,0 +1,41 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo">Free Medium Reading</div>
+                <p class="footer-tagline">Compassionate medium sessions connecting you with loved ones who have passed. Private, certified, and free for your first session.</p>
+            </div>
+            <div>
+                <div class="footer-heading">Quick Links</div>
+                <ul id="footer-menu">
+                    <li><a href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/how-it-works/')); ?>">How It Works</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/book-a-reading/')); ?>">Book a Reading</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/blog/')); ?>">Blog</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/about-us/')); ?>">About Us</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/faq/')); ?>">FAQ</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-heading">Support</div>
+                <ul class="footer-contact">
+                    <li><a href="<?php echo esc_url(home_url('/grief-support/')); ?>">Grief Support</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/privacy/')); ?>">Privacy Policy</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/terms-of-service/')); ?>">Terms of Service</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/disclaimer/')); ?>">Disclaimer</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/cookies/')); ?>">Cookie Policy</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/editorial-policy/')); ?>">Editorial Policy</a></li>
+                    <li><a href="<?php echo esc_url(home_url('/accessibility/')); ?>">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; <?php echo date('Y'); ?> Free Medium Reading. All rights reserved.</span>
+            <span>Private &amp; Confidential</span>
+        </div>
+    </div>
+</footer>
+<?php wp_footer(); ?>
+</body>
+</html>

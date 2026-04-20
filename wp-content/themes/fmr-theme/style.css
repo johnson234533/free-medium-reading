@@ -295,8 +295,9 @@ img { max-width: 100%; height: auto; display: block; }
    POST / PAGE CONTENT
    ============================================================ */
 .page-content { font-size: 1.05rem; line-height: 1.8; color: #2C3E50; }
-.page-content h2 { margin: 2.5rem 0 1rem; }
-.page-content h3 { margin: 2rem 0 0.75rem; color: #1a5276; }
+.page-content h2 { font-size: clamp(1.4rem, 3vw, 1.85rem); margin: 2.5rem 0 1rem; }
+.page-content h3 { font-size: 1.25rem; margin: 2rem 0 0.75rem; color: #1a5276; }
+.page-content h4 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
 .page-content ul, .page-content ol { margin: 0 0 1rem 1.5rem; }
 .page-content li { margin-bottom: 0.4rem; }
 .page-content table { width: 100%; border-collapse: collapse; margin-bottom: 1.5rem; }
@@ -310,17 +311,25 @@ img { max-width: 100%; height: auto; display: block; }
 .blog-card {
     background: #fff;
     border-radius: 8px;
-    padding: 2rem;
+    overflow: hidden;
     box-shadow: 0 3px 16px rgba(0,0,0,0.06);
     border-top: 3px solid #D6EAF8;
     display: flex; flex-direction: column;
 }
+.blog-card-thumb { display: block; line-height: 0; overflow: hidden; }
+.blog-card-thumb img { width: 100%; height: 200px; object-fit: cover; transition: transform 0.3s ease; }
+.blog-card:hover .blog-card-thumb img { transform: scale(1.04); }
+.blog-card-body { padding: 1.5rem 2rem 2rem; display: flex; flex-direction: column; flex: 1; }
 .blog-card .cat { font-size: 0.78rem; color: #7fa8c4; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
 .blog-card h3 { margin-bottom: 0.75rem; }
 .blog-card h3 a { color: #1a2e3b; transition: color 0.2s; }
 .blog-card h3 a:hover { color: #4a85ad; }
 .blog-card p { color: #5D6D7E; font-size: 0.92rem; flex: 1; margin: 0; }
 .blog-card .read-more { margin-top: 1rem; color: #4a85ad; font-size: 0.9rem; font-weight: 600; }
+
+/* Single post featured image */
+.single-featured-img { margin-bottom: 2.5rem; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.single-featured-img img { width: 100%; height: auto; display: block; }
 
 /* ============================================================
    FOOTER
